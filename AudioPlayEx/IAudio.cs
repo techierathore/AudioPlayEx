@@ -4,7 +4,7 @@ namespace AudioPlayEx
 {
 	public interface IAudio
 	{
-		void PlayMp3File(string fileName);
+		void PlayAudioFile(string fileName);
 	}
 }
 

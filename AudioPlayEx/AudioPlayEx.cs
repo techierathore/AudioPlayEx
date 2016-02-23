@@ -16,7 +16,7 @@ namespace AudioPlayEx
 							Text = "Play mp3 file",
 							Command = new Command(() =>
 								{
-									DependencyService.Get<IAudio>().PlayMp3File("MySong.mp3");
+									DependencyService.Get<IAudio>().PlayAudioFile("MySong.mp3");
 								})
 						}
 					}

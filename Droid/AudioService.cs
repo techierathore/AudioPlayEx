@@ -5,7 +5,6 @@ using Android.Media;
 using Android.Content.Res;
 
 [assembly: Dependency(typeof(AudioService))]
-
 namespace AudioPlayEx.Droid
 {
 	public class AudioService: IAudio
@@ -14,7 +13,7 @@ namespace AudioPlayEx.Droid
 		{
 		}
 
-		public void PlayMp3File(string fileName){
+		public void PlayAudioFile(string fileName){
 			var player = new MediaPlayer();
 			var fd = global::Android.App.Application.Context.Assets.OpenFd(fileName);
 			player.Prepared += (s, e) =>

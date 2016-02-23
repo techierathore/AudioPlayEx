@@ -15,7 +15,7 @@ namespace AudioPlayEx.iOS
 		{
 		}
 
-		public void PlayMp3File(string fileName)
+		public void PlayAudioFile(string fileName)
 		{
 			string sFilePath = NSBundle.MainBundle.PathForResource(Path.GetFileNameWithoutExtension(fileName), Path.GetExtension(fileName));
 			var url = NSUrl.FromString (sFilePath);
